@@ -6,7 +6,8 @@ class BandsContainer extends Component {
 
   renderBands = () => {
     if (this.props.bands){
-    this.props.bands.map(band => <li>{band}</li>)
+
+    return this.props.bands.map(band => <li>{band.name}</li>)
     }
   }
 
